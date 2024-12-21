@@ -1,0 +1,15 @@
+- name: Install Prometheus
+  yum:
+    name: prometheus
+    state: present
+
+- name: Configure Prometheus
+  copy:
+    src: /local/config/prometheus.yml
+    dest: /etc/prometheus/prometheus.yml
+
+- name: Start Prometheus service
+  service:
+    name: prometheus
+    state: started
+    enabled: yes
