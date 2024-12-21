@@ -1,0 +1,4 @@
+- name: Restore previous version
+  copy:
+    src: /backup/app_previous_version
+    dest: /var/www/html/app
