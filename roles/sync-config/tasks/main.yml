@@ -1,0 +1,4 @@
+- name: Update configuration file
+  copy:
+    src: /local/config/app.conf
+    dest: /etc/app/app.conf
