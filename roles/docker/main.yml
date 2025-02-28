@@ -1,0 +1,7 @@
+- name: Docker ps
+  shell: docker ps
+  register: result
+
+- name: Docekr ps result
+  debug:
+    msg: "{{ result.stdout_lines }}"
