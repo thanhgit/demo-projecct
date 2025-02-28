@@ -1,2 +1,4 @@
 [site]
 localhost ansible_connection=local
+[server-208]
+10.0.0.208

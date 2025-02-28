@@ -1,0 +1,7 @@
+- name: Check IP
+  shell: ip a
+  register: ip_result
+
+- name: IP result
+  debug:
+    msg: "{{ ip_result.stdout_lines }}"
